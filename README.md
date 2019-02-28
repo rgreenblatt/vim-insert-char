@@ -1,6 +1,6 @@
 # vim-insert-char
 
-Insert `count` of a character. Repeatable.
+Insert `count` of a character before or after the cursor. Repeatable.
 
 ### Usage
 
@@ -16,11 +16,13 @@ Loremggg ipsum dolor sit amet, consectetur adipiscing elit.
 
 ### Mappings
 
-By default maps to `<Space>`. To change that to underscore:
+By default maps to `<Space>` for insert before the cursor. To change that to leader s for
+before and leader S for after:
 
 ```vims
 let g:insert_char_no_default_mapping = 1
-nmap _ <Plug>InsertChar
+nmap <leader>s <Plug>InsertChar
+nmap <leader>S <Plug>InsertCharAfter
 ```
 
 ### Source
